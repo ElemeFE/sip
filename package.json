@@ -1,0 +1,17 @@
+{
+  "name": "sip",
+  "version": "0.0.1",
+  "description": "the guide of afternoon tea",
+  "main": "index.js",
+  "repository": "git@github.com:ElemeFE/sip.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "gitbook serve",
+    "predeploy": "rm -rf _book && gitbook build",
+    "deploy": "gh-pages -d _book"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "gitbook-cli": "^2.3.0"
+  }
+}
