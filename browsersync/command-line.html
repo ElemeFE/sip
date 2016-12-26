@@ -1,0 +1,505 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>命令行使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="options.md" />
+    
+    
+    <link rel="prev" href="install.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../charles/">
+            
+                <a href="../charles/">
+            
+                    
+                    Charles
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../charles/install.html">
+            
+                <a href="../charles/install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../charles/system-proxy.html">
+            
+                <a href="../charles/system-proxy.html">
+            
+                    
+                    设置为系统代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../charles/proxy-mobile.html">
+            
+                <a href="../charles/proxy-mobile.html">
+            
+                    
+                    代理手机上的网络请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../charles/ctrl-req.html">
+            
+                <a href="../charles/ctrl-req.html">
+            
+                    
+                    修改网络请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Browsersync
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="command-line.html">
+            
+                <a href="command-line.html">
+            
+                    
+                    命令行使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="options.md">
+            
+                <span>
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >命令行使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x8FD0;&#x884C;-browsersync">&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x8FD0;&#x884C; Browsersync</h2>
+<p>&#x4F7F;&#x7528; Browsersync &#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x4E86;&#xFF0C;Browsersync &#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x547D;&#x4EE4;&#x4F9B;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E0D;&#x6E05;&#x695A;&#x67D0;&#x4E2A;&#x6307;&#x4EE4;&#x7684;&#x7528;&#x6CD5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>$ browser-sync &lt;command&gt; --help</code> &#x6765;&#x83B7;&#x5F97;&#x547D;&#x4EE4;&#x7684;&#x8BF4;&#x660E;&#x3002;</p>
+<h3 id="browser-sync-start-options"><code>$ browser-sync start [options]</code></h3>
+<p>&#x8FD9;&#x662F;&#x542F;&#x52A8; Browsersync &#x670D;&#x52A1;&#x6240;&#x8981;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--server, -s</td>
+<td>&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF09;</td>
+</tr>
+<tr>
+<td>--serveStatic, --ss</td>
+<td>&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>--port</td>
+<td>&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>--proxy, -p</td>
+<td>&#x4EE3;&#x7406;&#x5230;&#x4E00;&#x4E2A;&#x5DF2;&#x6709;&#x7684;&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+<tr>
+<td>--ws</td>
+<td>&#x53EA;&#x6709; Proxy &#x6A21;&#x5F0F;&#x4E0B;&#x6709;&#x6548; - &#x652F;&#x6301; websocket &#x4EE3;&#x7406;</td>
+</tr>
+<tr>
+<td>--browser, -b</td>
+<td>&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x7684;&#x6D4F;&#x89C8;&#x5668;</td>
+</tr>
+<tr>
+<td>--files, -f</td>
+<td>&#x9700;&#x8981;&#x76D1;&#x542C;&#x7684;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>--index</td>
+<td>&#x6307;&#x5B9A;&#x7528;&#x4F5C;&#x9996;&#x9875;&#x7684;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>--plugins</td>
+<td>&#x52A0;&#x8F7D; Browsersync &#x63D2;&#x4EF6;</td>
+</tr>
+<tr>
+<td>--extensions</td>
+<td>&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x7684;&#x964D;&#x7EA7;</td>
+</tr>
+<tr>
+<td>--startPath</td>
+<td>&#x6307;&#x5B9A;&#x521D;&#x59CB;&#x6253;&#x5F00;&#x7684;&#x5730;&#x5740;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>--https</td>
+<td>&#x6253;&#x5F00;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7684; SSL</td>
+</tr>
+<tr>
+<td>--directory</td>
+<td>&#x5C55;&#x793A;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x76EE;&#x5F55;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>--xip</td>
+<td>&#x4F7F;&#x7528; xip.io &#x57DF;&#x540D;&#x8DEF;&#x7531;</td>
+</tr>
+<tr>
+<td>--tunnel</td>
+<td>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x516C;&#x5F00; URL</td>
+</tr>
+<tr>
+<td>--open</td>
+<td>&#x9009;&#x62E9;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x7684; URL&#xFF0C;&#x6216;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A; URL</td>
+</tr>
+<tr>
+<td>--cors</td>
+<td>&#x5BF9;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x52A0;&#x4E0A; Access Control &#x5934;&#x90E8;</td>
+</tr>
+<tr>
+<td>--config, -c</td>
+<td>&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>--host</td>
+<td>&#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x7684;&#x4E3B;&#x673A;&#x540D;</td>
+</tr>
+<tr>
+<td>--logLevel</td>
+<td>&#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x7EA7;&#x522B;&#xFF08;silent, info &#x6216; debug&#xFF09;</td>
+</tr>
+<tr>
+<td>--reload-delay</td>
+<td>&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x5230;&#x5237;&#x65B0;&#x4E8B;&#x4EF6;&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#xFF0C;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;</td>
+</tr>
+<tr>
+<td>--reload-debounce</td>
+<td>&#x9650;&#x5236;&#x53D1;&#x9001;&#x6D4F;&#x89C8;&#x5668;&#x5237;&#x65B0;&#x4E8B;&#x4EF6;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9891;&#x7387;</td>
+</tr>
+<tr>
+<td>--ui-port</td>
+<td>&#x6307;&#x5B9A; UI &#x754C;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>--no-notify</td>
+<td>&#x5173;&#x95ED;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x63D0;&#x793A;&#x5143;&#x7D20;</td>
+</tr>
+<tr>
+<td>--no-open</td>
+<td>&#x4E0D;&#x6253;&#x5F00;&#x65B0;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;</td>
+</tr>
+<tr>
+<td>--no-online</td>
+<td>&#x5F3A;&#x5236;&#x4E0D;&#x8054;&#x7F51;</td>
+</tr>
+<tr>
+<td>--no-ui</td>
+<td>&#x4E0D;&#x6253;&#x5F00;&#x7528;&#x6237;&#x754C;&#x9762;</td>
+</tr>
+<tr>
+<td>--no-ghost-mode</td>
+<td>&#x7981;&#x7528; Ghost &#x6A21;&#x5F0F;</td>
+</tr>
+<tr>
+<td>--no-inject-changes</td>
+<td>&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x90FD;&#x5237;&#x65B0;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>--no-reload-on-restart</td>
+<td>&#x4E0D;&#x5728;&#x91CD;&#x542F;&#x540E;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x611F;&#x53D7;&#x4E00;&#x4E0B; Browsersync &#x7684;&#x529F;&#x80FD;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#xFF0C;&#x4E00;&#x4E2A; index.html &#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x4E24;&#x4E2A;&#x5916;&#x8054;&#x8D44;&#x6E90;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x6837;&#x5F0F;&#x548C;&#x811A;&#x672C;&#x3002;</p>
+<p>[]</p>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x4EE5;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x76EE;&#x5F55;&#x4E2D;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x90FD;&#x89E6;&#x53D1;&#x9875;&#x9762;&#x7684;&#x66F4;&#x65B0;&#x3002;&#x901A;&#x8FC7;&#x67E5;&#x9605;&#x4E0A;&#x9762;&#x7684;&#x53C2;&#x6570;&#x8868;&#x683C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x53C2;&#x6570;&#x6709; <code>--server</code> &#x548C; <code>--file</code>&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x4EE5;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x76D1;&#x542C;&#x76EE;&#x5F55;&#x4E2D;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;
+$ browser-sync start --server --file *
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x8FD0;&#x884C;&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#xFF0C;Browsersync &#x4F1A;&#x81EA;&#x52A8;&#x5728; localhost &#x7684;&#x67D0;&#x4E2A;&#x53EF;&#x7528;&#x7AEF;&#x53E3;&#x4E0A;&#x5F00;&#x542F;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x81EA;&#x52A8;&#x5728;&#x9ED8;&#x8BA4;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x9875;&#x9762;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x8BBF;&#x95EE;&#x540C;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x3001;&#x6EDA;&#x52A8;&#x9875;&#x9762;&#x7B49;&#x3002;</p>
+<p>[]</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4EE3;&#x7801;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#xFF0C;&#x90FD;&#x4F1A;&#x5B9E;&#x65F6;&#x89E6;&#x53D1;&#x9875;&#x9762;&#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5237;&#x65B0;&#xFF0C;&#x540C;&#x65F6;&#x6211;&#x4EEC;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x540C;&#x65F6;&#x53CD;&#x5E94;&#x5230;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#x4E00;&#x822C;&#x5DF2;&#x7ECF;&#x4E3A;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86; dev-server &#x5E76;&#x8FD0;&#x884C;&#x5728;&#x672C;&#x5730;&#x7684;&#x67D0;&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7; nginx &#x5BF9;&#x67D0;&#x4E2A;&#x57DF;&#x540D;&#x8FDB;&#x884C;&#x4E86;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981; Browsersync &#x518D;&#x4E3A;&#x6211;&#x4EEC;&#x5F00;&#x542F;&#x8FD9;&#x6837;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x73B0;&#x6709;&#x7684;&#x670D;&#x52A1;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x7684; <code>--server</code> &#x53C2;&#x6570;&#x6362;&#x6210; <code>--proxy</code> &#x5E76;&#x4F20;&#x5165;&#x5DF2;&#x6709;&#x7684;&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x5982; <code>localhost:xxxx</code>&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; Browsersync &#x5728;&#x4E2D;&#x95F4;&#x5145;&#x5F53;&#x4E86;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5C42;&#xFF0C;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x8981;&#x6C42;&#xFF1A;</p>
+<pre><code class="lang-shell">$ browser-sync start --proxy &apos;localhost:1234&apos; --files &apos;app&apos;
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x9879;&#x76EE;&#x7684;&#x7ED3;&#x6784;&#x591A;&#x79CD;&#x591A;&#x6837;&#xFF0C;&#x9700;&#x8981;&#x4F20;&#x9012;&#x7ED9; Browsersync &#x7684;&#x914D;&#x7F6E;&#x53EF;&#x80FD;&#x4F1A;&#x5F88;&#x590D;&#x6742;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x5927;&#x91CF;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5199;&#x5728;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x91CC;&#x5C31;&#x663E;&#x5F97;&#x6709;&#x4E9B;&#x7B28;&#x62D9;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x548C;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x76F8;&#x5173;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x7EDF;&#x4E00;&#x5199;&#x5728;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x91CC;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x7684; <code>--config</code> &#x53C2;&#x6570;&#x4F20;&#x5165;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x8BA9; Browsersync &#x81EA;&#x5DF1;&#x53BB;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="install.html" class="navigation navigation-prev " aria-label="Previous page: 安装">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="options.md" class="navigation navigation-next " aria-label="Next page: 配置文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"命令行使用","level":"1.3.2","depth":2,"next":{"title":"配置文件","level":"1.3.3","depth":2,"path":"browsersync/options.md","ref":"browsersync/options.md","articles":[]},"previous":{"title":"安装","level":"1.3.1","depth":2,"path":"browsersync/install.md","ref":"browsersync/install.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"browsersync/command-line.md","mtime":"2016-12-26T10:50:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-26T11:05:07.260Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
